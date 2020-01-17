@@ -1,0 +1,10 @@
+---
+  - simulation/mars/.*:
+      github: jura02/mars
+      branch: envire_rebased
+      tag: 
+      interactive: true
+  - simulation/envire_managers:
+      github: Rauldg/envire_managers.git
+      branch: master_mars_rebase
+      tag: 
