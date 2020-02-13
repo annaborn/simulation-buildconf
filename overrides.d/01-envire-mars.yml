@@ -3,10 +3,14 @@
     github: rauldg/simulation-package_set
     branch: envireMars
 - simulation/mars/.*:
-    github: jura02/mars
-    branch: envire
+    github: annaborn/mars
+    branch: envire_2020
     tag: 
     interactive: true
+- simulation/envire_managers:
+    github: annaborn/envire_managers.git
+    branch: envire2020
+    tag: 
 - tools/smurf:
     branch: smurf_visual
 - envire/envire_smurf:
