@@ -16,9 +16,9 @@
 - envire/envire_smurf:
     github: jura02/envire-envire_smurf
     branch: smurf_visual
-#- simulation/orogen/mars:
-#    github: envire/simulation-orogen-envire_mars.git
-#    branch: envire_managers
+- simulation/orogen/mars:
+    github: envire/simulation-orogen-envire_mars.git
+    branch: envire_managers
 #- slam/pcl:
 #    github: entern2017/pcl
 #    branch: 1.8.1

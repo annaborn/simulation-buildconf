@@ -8,7 +8,8 @@ package_sets:
 
 
 layout:
-  #- rock.simulation
+  - rock.core
+  - simulation/orogen/mars
   - simulation/envire_managers
   - simulation/envire_smurf_loader
   - simulation/envire_graphics
