@@ -1,4 +1,4 @@
-# Write in this file customization code that will get executed before 
+# Write in this file customization code that will get executed before
 # autoproj is loaded.
 
 # Set the path to 'make'
@@ -24,7 +24,7 @@ env_add 'PATH', "/usr/lib/ccache/"
 
 if ENV['PURE_MARS']
     STDOUT.puts "Overrivding mars build to #{ENV['PURE_MARS']}"
-    Autoproj.change_option('pure_mars', ENV['PURE_MARS']) 
+    Autoproj.change_option('pure_mars', ENV['PURE_MARS'])
 else
     Autoproj.configuration_option 'pure_mars', 'boolean',
          :default => 'no',
@@ -32,15 +32,13 @@ else
 end
 
 
-require "autoproj/gitorious"
-Autoproj.gitorious_server_configuration('GITORIOUS', 'gitorious.org')
-Autoproj.gitorious_server_configuration('SPACEGIT', 'git.hb.dfki.de',:fallback_to_http => false)
-Autoproj.gitorious_server_configuration('GITHUB', 'github.com', :http_url => 'https://github.com')
+require 'autoproj/git_server_configuration'
 
-Autoproj.gitorious_server_configuration('DFKIGIT', 'git.hb.dfki.de', :fallback_to_http => false, default: 'ssh,ssh', disabled_methods: 'http,git')
+Autoproj.git_server_configuration('GITHUB', 'github.com', :http_url => 'https://github.com')
+Autoproj.git_server_configuration('DFKIGIT', 'git.hb.dfki.de', :http_url => 'https://git.hb.dfki.de')
 
 Autoproj.env_inherit 'CMAKE_PREFIX_PATH'
 
 if(Autobuild.respond_to?("displayed_error_line_count"))
-    Autobuild.displayed_error_line_count = 999999999999999999999999999999999999999999 
+    Autobuild.displayed_error_line_count = ALL
 end
