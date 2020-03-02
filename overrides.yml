@@ -8,3 +8,5 @@ overrides:
       url: https://github.com/rock-simulation/urdfdom_headers.git
   - base/console_bridge:
       url: https://github.com/rock-simulation/console_bridge.git
+  - tools/utilmm:
+      patch: $AUTOPROJ_SOURCE_DIR/0001-fix-add-pthread-to-cmake.patch
