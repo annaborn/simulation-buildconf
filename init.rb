@@ -40,5 +40,5 @@ Autoproj.git_server_configuration('DFKIGIT', 'git.hb.dfki.de', :http_url => 'htt
 Autoproj.env_inherit 'CMAKE_PREFIX_PATH'
 
 if(Autobuild.respond_to?("displayed_error_line_count"))
-    Autobuild.displayed_error_line_count = ALL
+    Autobuild.displayed_error_line_count = "ALL"
 end
