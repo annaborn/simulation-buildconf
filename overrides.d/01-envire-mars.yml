@@ -11,11 +11,13 @@
     github: annaborn/envire_managers.git
     branch: envire2020
     tag: 
+- envire/envire_smurf:
+    branch: smurf_visual
 - tools/smurf:
     branch: smurf_visual
-- envire/envire_smurf:
-    github: jura02/envire-envire_smurf
-    branch: smurf_visual
+- models/environments/spacebot_cup:
+    dfkigit: jrashid/spacebot_cup.git
+    branch: fixed_mars_scenes
 #- simulation/orogen/mars:
 #    github: envire/simulation-orogen-envire_mars.git
 #    branch: envire_managers
