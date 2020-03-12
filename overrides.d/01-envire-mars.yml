@@ -1,14 +1,7 @@
 ---
 - simulation/mars/.*:
     github: envire4mars/mars
-    branch: envire_2020
-    tag:
-    interactive: true
-- tools/smurf:
-    branch: smurf_visual
-- envire/envire_smurf:
-#    github: jura02/envire-envire_smurf
-    branch: smurf_visual
+    branch: envire
 #- simulation/orogen/mars:
 #    github: envire/simulation-orogen-envire_mars.git
 #    branch: envire_managers
