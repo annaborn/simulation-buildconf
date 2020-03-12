@@ -2,6 +2,7 @@
 - simulation/mars/.*:
     github: envire4mars/mars
     branch: envire
+    interactive: true
 #- simulation/orogen/mars:
 #    github: envire/simulation-orogen-envire_mars.git
 #    branch: envire_managers
